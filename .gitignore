@@ -2,3 +2,5 @@
 .htmlcov
 .pytest_cache
 *.pyc
+.idea
+venv

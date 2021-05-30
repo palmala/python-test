@@ -23,6 +23,13 @@ class TestPoint2D(unittest.TestCase):
         self.assertTrue(point.x == 0)
         self.assertTrue(point.y == 5)
 
+    def test_substitution(self):
+        point1 = Point2D.Point2D(1, 2)
+        point2 = Point2D.Point2D(1, 3)
+        point = point1 - point2
+        self.assertTrue(point.x == 0)
+        self.assertTrue(point.y == -1)
+
 
 if __name__ == '__main__':
     unittest.main()
